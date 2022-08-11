@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Url Shortener</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="shortener">
+            <h1 class="header">Url Shortener</h1>
+            <form class="shortener-form">
+                <!-- <label for="url">Url</label> -->
+                <input type="url" name="url" class="url-input" placeholder="Enter your url...">
+                <button class="shortener-btn" type="submit">Shrink</button>
+            </form>
+
+
+            <div id="results" class="results-container" style="display: none;">
+
+                <div class="result-header">
+                    <p>Full url</p>
+                    <p>Short url</p>
+                </div>
+
+                <div class="url-box"></div>
+                <template id="result-template">
+                    <div class="url-item">
+                        <p data-fullurl></p>
+                        <p class="url-to-copy"><a data-shorturl href=""></a></p>
+                        <div class="short-url">
+                            <svg class="copy-btn" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                                <g data-name="Icon feather-copy" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path  data-name="Path 155" d="M5.304 3.995h5.891a1.309 1.309 0 0 1 1.309 1.309v5.891a1.309 1.309 0 0 1-1.309 1.305H5.304a1.309 1.309 0 0 1-1.309-1.305V5.304a1.309 1.309 0 0 1 1.309-1.309Z"/><path data-name="Path 156" d="M2.463 9.005h-.654A1.309 1.309 0 0 1 .5 7.7V1.809A1.309 1.309 0 0 1 1.809.5H7.7a1.309 1.309 0 0 1 1.309 1.309v.654"/>
+                                </g>
+                            </svg>
+                            <span style="display: none;" class="url-notif">copied!</span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
