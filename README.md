@@ -1,5 +1,5 @@
 <h1 align="center">
-  URL-Shortner
+  URL-Shortener
 </h1>
 
 A custom URL shortening service like goo.gl using node.js and mongodb
